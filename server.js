@@ -35,6 +35,11 @@ app.post('/stop', (req, res) => {
     res.status(200).send('Stop endpoint hit');
 });
 
+// Serve config.json from the project root directory
+app.get('/config.json', (req, res) => {
+    res.sendFile(path.join(__dirname, 'config.json'));
+});
+
 // Start the server
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
