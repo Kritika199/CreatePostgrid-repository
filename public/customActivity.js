@@ -9,7 +9,7 @@ define(["postmonger"], function(Postmonger) {
         { label: "Message Type", key: "secondForm" },
         { label: "HTML", key: "thirdForm" }
     ];
-    var currentStep = steps[0].key;
+    var currentStep = steps[1].key;
 
     connection.on("initActivity", initialize);
     connection.on("requestedTokens", onGetTokens);
