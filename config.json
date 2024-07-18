@@ -15,7 +15,24 @@
       "execute": {
         "inArguments": [],
         "outArguments": [],
-        "url": "http://localhost:3000/execute",
+        "url": "{
+    "workflowApiVersion": "1.1",
+    "metaData": {
+      "icon": "https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/35cc11eb-39a9-4dac-948a-24670781c557.png",
+      "category": "message"
+    },
+    "type": "REST",
+    "lang": {
+      "en-US": {
+        "name": "Postgrid Custom Activity",
+        "description": "Description of custom activity"
+      }
+    },
+    "arguments": {
+      "execute": {
+        "inArguments": [],
+        "outArguments": [],
+        "url": "https://create-postgrid-repository.vercel.app/execute",
         "verb": "POST",
         "body": "",
         "header": "",
@@ -26,17 +43,17 @@
     },
     "configurationArguments": {
       "publish": {
-        "url": "http://localhost:3000/publish",
+        "url": "https://create-postgrid-repository.vercel.app/publish",
         "verb": "POST",
         "useJwt": false
       },
       "validate": {
-        "url": "http://localhost:3000/validate",
+        "url": "https://create-postgrid-repository.vercel.app/validate",
         "verb": "POST",
         "useJwt": false
       },
       "stop": {
-        "url": "http://localhost:3000/stop",
+        "url": "https://create-postgrid-repository.vercel.app/stop",
         "verb": "POST",
         "useJwt": false
       }
